@@ -6,11 +6,10 @@
  * @packageDocumentation
  */
 
-// TODO: Phase 1 - Implement CLI interface
-// This file will contain the main CLI entry point using Commander.js
-
-export * from './cli';
-export * from './config';
-export * from './agents';
-export * from './mcp';
-export * from './workflows';
+// Core module exports
+export * from './cli/index.js';
+export * from './config/index.js';
+export * from './agents/index.js';
+export * from './mcp/index.js';
+export * from './workflows/index.js';
+export * from './utils/index.js';
