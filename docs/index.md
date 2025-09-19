@@ -8,9 +8,9 @@ description: Open source workflow engine enabling agentic IDEs to execute sophis
 
 **Multi-agent workflow engine for agentic IDEs using OpenAI Agents SDK**
 
-[![CI](https://github.com/your-username/agents-cli/workflows/CI/badge.svg)](https://github.com/your-username/agents-cli/actions)
+[![CI](https://github.com/sofatutor/agents-cli/workflows/CI/badge.svg)](https://github.com/sofatutor/agents-cli/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://your-username.github.io/agents-cli)
+[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://sofatutor.github.io/agents-cli)
 
 ## 🚀 What is Agents CLI?
 
@@ -60,4 +60,4 @@ We welcome contributions! This is an open source project under MIT license.
 
 ## 📄 License
 
-MIT License - see [LICENSE](https://github.com/your-username/agents-cli/blob/main/LICENSE)
+MIT License - see [LICENSE](https://github.com/sofatutor/agents-cli/blob/main/LICENSE)

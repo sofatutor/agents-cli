@@ -1,8 +1,8 @@
 # Agents CLI
 
-[![CI](https://github.com/your-username/agents-cli/workflows/CI/badge.svg)](https://github.com/your-username/agents-cli/actions)
+[![CI](https://github.com/sofatutor/agents-cli/workflows/CI/badge.svg)](https://github.com/sofatutor/agents-cli/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://your-username.github.io/agents-cli)
+[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://sofatutor.github.io/agents-cli)
 [![Phase](https://img.shields.io/badge/Phase-1%20Development-orange)]()
 [![OpenAI SDK](https://img.shields.io/badge/OpenAI-Agents%20SDK-green)](https://openai.github.io/openai-agents-js/)
 
@@ -10,7 +10,7 @@
 
 > 🚧 **Status**: Phase 1 Development - Foundation and MCP core functionality
 >
-> 📖 **Documentation**: [your-username.github.io/agents-cli](https://your-username.github.io/agents-cli)
+> 📖 **Documentation**: [sofatutor.github.io/agents-cli](https://sofatutor.github.io/agents-cli)
 
 ## What is Agents CLI?
 
@@ -97,13 +97,13 @@ agents-cli serve \
 
 ## Documentation
 
-📖 **[Complete Documentation](https://your-username.github.io/agents-cli)**
+📖 **[Complete Documentation](https://sofatutor.github.io/agents-cli)**
 
 ### Quick Links
-- [Installation Guide](https://your-username.github.io/agents-cli/getting-started/installation)
-- [IDE Integration](https://your-username.github.io/agents-cli/guides/ide-integration)
-- [Configuration Reference](https://your-username.github.io/agents-cli/api/configuration-schema)
-- [Example Workflows](https://your-username.github.io/agents-cli/examples/)
+- [Installation Guide](https://sofatutor.github.io/agents-cli/getting-started/installation)
+- [IDE Integration](https://sofatutor.github.io/agents-cli/guides/ide-integration)
+- [Configuration Reference](https://sofatutor.github.io/agents-cli/api/configuration-schema)
+- [Example Workflows](https://sofatutor.github.io/agents-cli/examples/)
 
 ### Architecture & Development
 - [OpenAI Agents SDK Guide](AGENTS.md)
@@ -117,7 +117,7 @@ We welcome contributions! This is an open source project under MIT license.
 
 🛠️ **Development Setup**
 ```bash
-git clone https://github.com/your-username/agents-cli.git
+git clone https://github.com/sofatutor/agents-cli.git
 cd agents-cli
 npm install
 npm test
@@ -125,9 +125,9 @@ npm run dev
 ```
 
 📋 **Contributing Guidelines**
-- [Development Setup](https://your-username.github.io/agents-cli/contributing/development-setup)
-- [Architecture Overview](https://your-username.github.io/agents-cli/contributing/architecture)
-- [Phase Task Breakdown](https://your-username.github.io/agents-cli/contributing/phase-roadmap)
+- [Development Setup](https://sofatutor.github.io/agents-cli/contributing/development-setup)
+- [Architecture Overview](https://sofatutor.github.io/agents-cli/contributing/architecture)
+- [Phase Task Breakdown](https://sofatutor.github.io/agents-cli/contributing/phase-roadmap)
 - [Contributing Guide](CONTRIBUTING.md)
 
 ## Project Status & Roadmap
@@ -143,7 +143,7 @@ npm run dev
 | ⏳ OpenAI SDK Integration | Planned | Agent creation and orchestration |
 | ⏳ Security Framework | Planned | Tool sandboxing and access controls |
 
-[View detailed progress →](https://your-username.github.io/agents-cli/contributing/phase-roadmap)
+[View detailed progress →](https://sofatutor.github.io/agents-cli/contributing/phase-roadmap)
 
 ### Upcoming Phases
 - **Phase 2**: Advanced tool integrations and parallel workflow patterns
@@ -174,9 +174,9 @@ Security is a core focus. See our [Security Policy](SECURITY.md) for:
 
 ## Support
 
-- 📖 [Documentation](https://your-username.github.io/agents-cli)
-- 🐛 [Report Issues](https://github.com/your-username/agents-cli/issues)
-- 💬 [GitHub Discussions](https://github.com/your-username/agents-cli/discussions)
+- 📖 [Documentation](https://sofatutor.github.io/agents-cli)
+- 🐛 [Report Issues](https://github.com/sofatutor/agents-cli/issues)
+- 💬 [GitHub Discussions](https://github.com/sofatutor/agents-cli/discussions)
 - 🤝 [Contributing Guide](CONTRIBUTING.md)
 
 ---
