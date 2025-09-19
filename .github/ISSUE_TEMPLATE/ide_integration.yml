@@ -1,0 +1,124 @@
+name: IDE Integration Request
+description: Request support for a new IDE or improve existing IDE integration
+title: "[IDE]: "
+labels: ["ide-integration", "enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in IDE integration! This template helps us understand integration requirements for different IDEs.
+
+  - type: input
+    id: ide_name
+    attributes:
+      label: IDE Name
+      description: Which IDE are you requesting integration for?
+      placeholder: "e.g., JetBrains IntelliJ, Neovim, Emacs"
+    validations:
+      required: true
+
+  - type: input
+    id: ide_version
+    attributes:
+      label: IDE Version
+      description: What version(s) of the IDE are you using?
+      placeholder: "e.g., 2024.2, latest stable"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: integration_type
+    attributes:
+      label: Integration Type
+      description: How would you like Agents CLI to integrate with this IDE?
+      options:
+        - MCP Server (preferred)
+        - CLI Plugin/Extension
+        - HTTP API
+        - Language Server Protocol
+        - Custom Integration
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_support
+    attributes:
+      label: Current Support Level
+      description: Does this IDE currently work with Agents CLI? What limitations exist?
+      placeholder: |
+        - Can connect via MCP: Yes/No
+        - CLI integration works: Yes/No
+        - Specific issues: ...
+
+  - type: textarea
+    id: desired_functionality
+    attributes:
+      label: Desired Functionality
+      description: What specific features would you like to work in this IDE?
+      placeholder: |
+        - Real-time code review workflows
+        - Architecture analysis
+        - Custom agent workflows
+        - File system tool integration
+        - ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: workflow_examples
+    attributes:
+      label: Workflow Examples
+      description: Describe specific workflows you'd like to run from this IDE
+      placeholder: |
+        1. Select code in editor → Run code review workflow → Get results in sidebar
+        2. Right-click on project → Architecture analysis → Display recommendations
+        ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_details
+    attributes:
+      label: Technical Details
+      description: Any technical information about IDE extension capabilities, APIs, etc.
+      placeholder: |
+        - Extension API documentation:
+        - Plugin architecture:
+        - Integration examples:
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this integration for your workflow?
+      options:
+        - Nice to have
+        - Would improve productivity
+        - Important for my team
+        - Critical for adoption
+    validations:
+      required: true
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Available Resources
+      description: Can you help with testing, documentation, or development?
+      placeholder: |
+        - I can test integration
+        - I can provide IDE-specific documentation
+        - I can contribute to development
+        - I have access to IDE development resources
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I have checked existing IDE integration documentation
+          required: true
+        - label: I have searched for similar integration requests
+          required: true
+        - label: I have provided specific use cases and workflows
+          required: true

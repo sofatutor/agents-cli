@@ -1,0 +1,8 @@
+# Multi-Agent Collaboration Guidelines
+
+- Alternate personas every turn in the order defined by the active command.
+- Each persona’s turn must follow the **Observe → Reason → Adjust → Verify → Hand Off** pattern.
+- Keep edits focused on the referenced artifact; avoid unrelated commentary.
+- Mark follow-up work with `> TODO (Role)` and describe the needed action.
+- Ensure accessibility, performance, and security considerations are explicitly called out when relevant.
+- End the session only after every persona confirms the goal is met and outstanding questions are documented.

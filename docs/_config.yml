@@ -1,0 +1,69 @@
+title: Agents CLI Documentation
+description: Multi-agent workflow engine for agentic IDEs
+url: https://your-username.github.io
+baseurl: /agents-cli
+
+# Theme
+theme: jekyll-theme-cayman
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - getting-started/installation.md
+  - guides/ide-integration.md
+  - api/configuration-schema.md
+  - examples/index.md
+  - contributing/development-setup.md
+
+# Social links
+github:
+  repository_url: https://github.com/your-username/agents-cli
+
+# OpenGraph
+logo: assets/img/agents-cli-logo.png
+social:
+  name: Agents CLI
+  links:
+    - https://github.com/your-username/agents-cli
+
+# Collections
+collections:
+  examples:
+    output: true
+    permalink: /:collection/:name/
+  guides:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "examples"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - tasks/
+  - agents/
