@@ -7,11 +7,11 @@
 
 ## 🎯 Phase 1 Objectives
 
-- **CLI Interface**: Working `agents-cli` command with basic workflow execution
+- **CLI Interface**: Working `agents-cli` command with single-agent execution
 - **MCP Server**: Basic server that IDEs can connect to and execute tools
-- **Configuration System**: JSON-based agent and workflow definitions
+- **Configuration System**: JSON-based agent and tool definitions
 - **Security Framework**: Safe tool execution with sandboxing
-- **OpenAI Integration**: Adapter pattern for SDK integration
+- **Basic SDK Integration**: Single-agent execution foundation for Phase 2
 - **Testing & Quality**: Comprehensive test suite and CI/CD
 
 ## 📅 Timeline & Schedule
@@ -173,38 +173,53 @@ gantt
 
 ---
 
-### ⚡ **6. OpenAI SDK Integration & Adapter (Days 9-13)**
-> **Critical Path** - Core workflow execution capability
+### ⚡ **6. Basic OpenAI SDK Integration (Days 9-11)** **[SIMPLIFIED]**
+> **Foundation** - Single-agent execution for Phase 1 MVP
 
-#### 6.1 Adapter Pattern Implementation
-- [ ] **6.1.1** Create `IAgentRuntime` interface for SDK isolation
-- [ ] **6.1.2** Implement `OpenAIAgentRuntime` with full SDK integration
-- [ ] **6.1.3** Create `IAgent` wrapper interface for abstraction
-- [ ] **6.1.4** Add runtime capability detection and validation
+#### 6.1 Basic SDK Integration
+- [ ] **6.1.1** Set up OpenAI Agents SDK dependency
+  - Install and configure OpenAI Agents SDK
+  - Set up API client with authentication
+  - Basic connection testing and validation
+  - Error handling for API failures
 
-#### 6.2 Agent Creation & Management
-- [ ] **6.2.1** Create `AgentFactory` with security policy integration
-- [ ] **6.2.2** Implement agent configuration translation and validation
-- [ ] **6.2.3** Add comprehensive agent lifecycle management
-- [ ] **6.2.4** Create agent registry for workflow orchestration
+- [ ] **6.1.2** Create simple `AgentRunner` class
+  - Single agent creation from configuration
+  - Basic message sending and response handling
+  - Simple tool execution integration
+  - Basic error handling and logging
 
-#### 6.3 Basic Workflow Execution
-- [ ] **6.3.1** Create `WorkflowEngine` with handoff chain support
-- [ ] **6.3.2** Implement basic handoff logic using SDK native capabilities
-- [ ] **6.3.3** Add workflow state tracking and turn management
-- [ ] **6.3.4** Create result aggregation and structured formatting
+- [ ] **6.1.3** Implement basic tool integration
+  - Register MCP tools with agent
+  - Tool execution through SDK
+  - Result formatting for CLI output
+  - Error propagation to user
 
-#### 6.4 Tool Integration Bridge
-- [ ] **6.4.1** Create tool adapter for SDK integration
-- [ ] **6.4.2** Implement security-wrapped tool execution
-- [ ] **6.4.3** Add tool result formatting for agent consumption
-- [ ] **6.4.4** Create comprehensive tool error handling
+#### 6.2 Configuration Integration
+- [ ] **6.2.1** Agent creation from JSON config
+  - Parse agent configuration from schema
+  - Convert to SDK format
+  - Model and parameter validation
+  - Clear error messages for invalid configs
 
-#### 6.5 Integration Testing
-- [ ] **6.5.1** Create end-to-end workflow tests with real OpenAI API
-- [ ] **6.5.2** Test agent creation from various configurations
-- [ ] **6.5.3** Validate handoff chains work correctly
-- [ ] **6.5.4** Test tool execution through full stack
+- [ ] **6.2.2** Single-agent workflow execution
+  - Execute one agent with given input
+  - Tool execution during agent run
+  - Collect and format results
+  - Handle execution errors gracefully
+
+#### 6.3 CLI Integration
+- [ ] **6.3.1** Integrate with CLI `run` command
+  - Load agent from configuration file
+  - Execute single-agent workflow
+  - Display results in CLI
+  - Proper exit codes for success/failure
+
+- [ ] **6.3.2** Basic testing and validation
+  - Unit tests for agent creation
+  - Integration test with real OpenAI API
+  - Example single-agent configuration
+  - Error scenario testing
 
 ---
 
@@ -239,12 +254,12 @@ gantt
 ## ✅ Definition of Done - Phase 1
 
 **🎯 Must Complete:**
-- [ ] ✅ CLI runs `agents-cli run --config example.json` successfully
+- [ ] ✅ CLI runs `agents-cli run --config single-agent.json` successfully
 - [ ] ✅ MCP server starts and registers tools for IDE connection
 - [ ] ✅ Security policies prevent unauthorized operations
-- [ ] ✅ OpenAI SDK integration executes basic workflows
+- [ ] ✅ Single-agent execution works with OpenAI SDK
 - [ ] ✅ Configuration validation provides clear error messages
-- [ ] ✅ Integration tests cover CLI → MCP → SDK → Agent flow
+- [ ] ✅ Integration tests cover CLI → MCP → SDK → Single Agent flow
 
 **📊 Quality Gates:**
 - [ ] All unit tests pass (>80% code coverage)
@@ -265,19 +280,20 @@ gantt
 ## 🔄 Next Steps After Phase 1
 
 Upon completion, Phase 1 delivers:
-- **Working CLI** with basic workflow execution
+- **Working CLI** with single-agent execution
 - **MCP Server** ready for IDE integration
 - **Security Framework** for safe tool execution
-- **OpenAI SDK Integration** with adapter pattern
-- **Example Configurations** for common workflows
+- **Basic OpenAI SDK Integration** foundation
+- **Example Single-Agent Configurations**
 
-**Phase 2 Preview**: Advanced tool integrations, parallel workflows, full MCP protocol compliance, and production-ready features.
+[Phase 2: Advanced Multi-Agent Workflows](phase2.md) with handoffs, orchestration, and production features.
 
 ---
 
 ## 📚 Related Documents
 
 - **[Phase 0: Repository Foundation](phase0.md)** - Prerequisites and setup
+- **[Phase 2: Advanced Multi-Agent Workflows](phase2.md)** - Next phase features
 - **[Project PRD](../PRD.md)** - Overall project requirements and vision
 - **[OpenAI Agents SDK Knowledge](../AGENTS.md)** - SDK reference and examples
 
