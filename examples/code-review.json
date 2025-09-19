@@ -1,0 +1,26 @@
+{
+  "agents": {
+    "code_reviewer": {
+      "name": "Senior Code Reviewer",
+      "instructions": "Review code for bugs, performance issues, and best practices. Focus on code quality, maintainability, and security.",
+      "model": "gpt-4o",
+      "tools": ["file_operations", "git_tools"],
+      "guardrails": ["no_destructive_operations"],
+      "handoffs": ["security_reviewer"]
+    },
+    "security_reviewer": {
+      "name": "Security Expert",
+      "instructions": "Focus specifically on security vulnerabilities, authentication issues, and security best practices.",
+      "model": "gpt-4o",
+      "tools": ["security_scanner", "file_operations"],
+      "guardrails": ["no_destructive_operations"],
+      "handoffs": ["code_reviewer"]
+    }
+  },
+  "workflow": {
+    "entry_point": "code_reviewer",
+    "pattern": "handoff_chain",
+    "max_turns": 15,
+    "timeout": 300
+  }
+}

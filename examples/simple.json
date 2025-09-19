@@ -1,0 +1,18 @@
+{
+  "agents": {
+    "simple_assistant": {
+      "name": "Simple Assistant",
+      "instructions": "You are a helpful assistant. Answer questions directly and concisely.",
+      "model": "gpt-4o",
+      "tools": [],
+      "guardrails": [],
+      "handoffs": []
+    }
+  },
+  "workflow": {
+    "entry_point": "simple_assistant",
+    "pattern": "sequential",
+    "max_turns": 5,
+    "timeout": 60
+  }
+}
