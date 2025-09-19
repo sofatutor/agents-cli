@@ -286,7 +286,7 @@ Upon completion, Phase 1 delivers:
 - **Basic OpenAI SDK Integration** foundation
 - **Example Single-Agent Configurations**
 
-**Phase 2**: [Advanced Multi-Agent Workflows](phase2.md) with handoffs, orchestration, and production features.
+[Phase 2: Advanced Multi-Agent Workflows](phase2.md) with handoffs, orchestration, and production features.
 
 ---
 
