@@ -1,6 +1,6 @@
 title: Agents CLI Documentation
 description: Multi-agent workflow engine for agentic IDEs
-url: https://your-username.github.io
+url: https://sofatutor.github.io
 baseurl: /agents-cli
 
 # Theme
@@ -26,14 +26,14 @@ header_pages:
 
 # Social links
 github:
-  repository_url: https://github.com/your-username/agents-cli
+  repository_url: https://github.com/sofatutor/agents-cli
 
 # OpenGraph
 logo: assets/img/agents-cli-logo.png
 social:
   name: Agents CLI
   links:
-    - https://github.com/your-username/agents-cli
+    - https://github.com/sofatutor/agents-cli
 
 # Collections
 collections:
